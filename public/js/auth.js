@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged((user) => {
     console.log(user.metadata.lastSignInTime);
     console.log(user);
 
-    alertify.success(`Logged in as ${user.email}`);
+    alertify.message(`Logged in as ${user.email}`);
 
     // ...
   } else {
